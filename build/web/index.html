@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Contacto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Contactanos</h1>
+        <form action="Servidor.jsp" method="post" id="Form_Contact">
+            Correo eléctronico: 
+            <input type="email" name="Email" placeholder="example@gmail.com" maxlength="30" autocomplete="off" required/>
+            <br>
+            <br>
+            Nombre: 
+            <input type="text" name="Name" placeholder="Digite su nombre" maxlength="30" autocomplete="off" required/>
+            <br>
+            <br>
+            Apellido:
+            <input type="text" name="Last_Name" placeholder="Digite su apellido" maxlength="30" autocomplete="off" required/>
+            <br>
+            <br>
+            Teléfono:
+            <input type="text" name="Phone" placeholder="Digite su teléfono" autocomplete="off" required />
+        </form>
+        <br>
+        <br>
+        <label for="Text_Area_Description">Inquietud o duda:</label>
+        <textarea id="Text_Area_Description" rows="5" cols="100" name="Description" form="Form_Contact" placeholder="Digite su inquietud o duda" maxlength="255" required></textarea>
+        <br>
+        <br>
+        <br>
+        <input type="Submit" form="Form_Contact" value="Enviar" />
+    </body>
+</html>
